@@ -1,0 +1,360 @@
+/* Main Content */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: white;
+  background: #333;
+  text-align: center;
+  font-family: arial;
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 1em 0;
+}
+
+p {
+  margin: 0;
+  padding: 1em 0;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  font-size: 0.84em;
+  display: inline-block;
+  border: 1.5px solid #fff;
+  margin: 0 0.5em;
+  padding: 0.05em 0.5em;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  color: #333;
+  background: #fff;
+}
+
+/* Navbar */
+.nav-logo {
+  width: 90px;
+  position: absolute;
+  left: 4em;
+  top: 13.88px;
+}
+
+.nav-area {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+nav {
+  justify-content: space-between;
+  background: none;
+  font-weight: 500;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.nav-area li a {
+  text-decoration: none;
+  transition: 0.2s;
+  color: white;
+}
+
+.nav-area li a:hover {
+  border-bottom: 2.2px solid #fff;
+  padding-bottom: 2px;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  .nav-logo {
+    left: 1em;
+    top: 1.3em;
+  }
+
+  .nav-area li a:hover {
+    border-bottom: none;
+    color: orange;
+  }
+
+  .navbar .nav-area {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    top: 50px;
+  }
+
+  .navbar-links ul li {
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+    text-align: right;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+/* Showcase */
+
+#showcase {
+  min-height: 450px;
+  margin: 0;
+  padding: 0;
+}
+
+#showcase h1 {
+  height: 2.4em;
+  font-size: 30px;
+  padding-left: 8px;
+}
+
+#showcase .bg-image {
+  position: absolute;
+  background: url("img/Mas Wafi Satu Atap.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 580px;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+#showcase .content-wrap {
+  text-align: left;
+  padding-left: 3em;
+  padding-top: 13em;
+}
+
+#showcase .content-wrap img {
+  position: absolute;
+  top: 10em;
+  left: 4em;
+  width: 90px;
+}
+
+@media (max-width: 700px) {
+  #showcase .content-wrap {
+    padding-left: 1.5em;
+  }
+  #showcase .content-wrap img {
+    left: 2.5em;
+  }
+  .nav-logo {
+    left: 2em;
+  }
+}
+
+/* Section A */
+
+#section-a .content-wrap {
+  padding: 1em 1.5em;
+}
+
+#section-a {
+  color: #333;
+  background: #dadada;
+  padding-bottom: 2em;
+  height: 625px;
+}
+
+#section-a p {
+  text-align: justify;
+}
+
+#section-a span {
+  color: rgb(255, 130, 0);
+}
+
+#section-a .cat {
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#section-a .proteksi {
+  width: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  bottom: 345px;
+  left: 230px;
+}
+
+@media (max-width: 700px) {
+  #section-a .cat {
+    width: 400px;
+  }
+  #section-a .proteksi {
+    width: 85px;
+    left: 195px;
+    bottom: 340px;
+  }
+  #section-a {
+    height: 700px;
+  }
+}
+
+@media (max-width: 400px) {
+  #section-a .cat {
+    width: 300px;
+  }
+  #section-a .proteksi {
+    width: 70px;
+    left: 125px;
+    bottom: 250px;
+  }
+}
+
+/* Section B */
+
+#section-b {
+  background: rgb(225, 99, 71);
+  color: white;
+  padding: 2em;
+}
+
+#section-b p {
+  text-align: justify;
+}
+
+#section-b span {
+  color: black;
+}
+
+.pics_in_a_row {
+  display: flex;
+  margin: 25px 0;
+}
+
+.img1 {
+  flex: 0.75;
+  padding-right: 20px;
+}
+.img2 {
+  flex: 1.3345;
+}
+
+@media (min-width: 700px) {
+  .pics_in_a_row {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Footer */
+
+#main-footer {
+  background: #dadada;
+  color: black;
+  padding: 2em;
+  text-align: center;
+  height: 240px;
+}
+
+@media (min-width: 700px) {
+  #main-footer {
+    height: 200px;
+  }
+}
+
+#main-footer hr {
+  border-top: 2px solid black;
+}
+
+#main-footer .content-wrap {
+  padding-top: 130px;
+}
+
+#main-footer a {
+  text-decoration: none;
+  color: #2690d4;
+}
+
+#main-footer ul {
+  list-style: none;
+  padding-left: 0;
+  padding-bottom: none;
+  text-align: left;
+}
+
+#main-footer a {
+  text-decoration: none;
+  color: black;
+}
+
+#main-footer li {
+  display: inline-block;
+  font-size: 13px;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+#main-footer p {
+  text-align: left;
+  font-size: 13px;
+  margin-top: -21px;
+  color: #555;
+}
